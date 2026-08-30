@@ -44,7 +44,21 @@ cp .env.example .env
 ```bash
 python3 run.py
 ```
-Open your browser at **`http://127.0.0.1:8000`** to access the interactive web application.
+Open your browser at **`http://127.0.0.1:8010`** to access the interactive web application.
+
+---
+
+## ☁️ Deploy to Vercel (1-Click)
+
+AlignCraft Studio is pre-configured for seamless serverless deployment on **Vercel** (`@vercel/python` + static frontend):
+
+1. Go to **[vercel.com/new](https://vercel.com/new)**.
+2. Select your repository: **`callme-siva/AlignCraft_Studio`**.
+3. (Optional) Add Environment Variables:
+   - `GEMINI_API_KEY`: *(your Gemini API key)*
+   - `OPENAI_API_KEY`: *(your OpenAI API key)*
+   - `FORCE_MOCK`: `false` *(or leave blank for automatic fallback)*
+4. Click **Deploy**! Vercel will build the serverless functions and serve the frontend at `https://your-project.vercel.app`.
 
 ---
 
